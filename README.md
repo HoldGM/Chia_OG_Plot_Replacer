@@ -55,17 +55,17 @@ git clone https://github.com/HoldGM/Chia_OG_Plot_Replacer.git
 
 ## Help
 
-*JSON format requires '\' to be escaped, use '\\' for file path delimiters
+* JSON format requires '\' to be escaped, use '\\' for file path delimiters
 
-*If script fails to execute with:
-```
-\Pool_Plot_Replace.ps1 cannot be loaded because running scripts is disabled on this system.
-```
-Close Powershell and reopen as Administrator and run: 
-```
-> set-executionpolicy remotesigned
-```
-Close Administrator console, open new Powershell console and attempt to run script again
+* If script fails to execute with:
+    ```
+    \Pool_Plot_Replace.ps1 cannot be loaded because running scripts is disabled on this system.
+    ```
+    Close Powershell and reopen as Administrator and run: 
+    ```
+    > set-executionpolicy remotesigned
+    ```
+    Close Administrator console, open new Powershell console and attempt to run script again
 
 ## Authors
 
