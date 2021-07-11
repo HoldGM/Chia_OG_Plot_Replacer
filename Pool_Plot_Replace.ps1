@@ -47,7 +47,11 @@ if($null -eq $config.farmer_key -or $config.farmer_key.Length -ne 96){
     exit 1
 }
 
+$gFlag = ""
 
+if($config.madmax_G_flag){
+    $gFlag = "-G"
+}
 # Check if path to new pool plot location exists, not create directory for plots
 if(!(Test-Path $config.pool_plot_location)){
     New-Item -ItemType Directory -Force -Path $config.pool_plot_location
@@ -63,6 +67,14 @@ Write-Host "Init Count: $($initCount)"
 foreach ($file in $oldPlotList){
     Write-Host "$($i) of $($initCount) - Removing Plot - $($file)"
     Remove-Item $file
-    Start-Process -NoNewWindow -Wait -FilePath $($config.madmax_exec) -ArgumentList "-n 1 -r $($config.threads) -u $($config.bucket_count) -t $($config.temp1) -2 $($config.temp2) -d $($config.pool_plot_location) -f $($config.farmer_key) -c $($config.contract_NFT)"
+    $t1 = $config.temp1
+    $t2 = $config.temp2
+    if($config.madmax_G_flag){
+        if($i % 2 -eq 0){
+            $t1 = $config.temp2
+            $t2 = $config.temp1
+        }
+    }
+    Start-Process -NoNewWindow -Wait -FilePath $($config.madmax_exec) -ArgumentList "-n 1 -r $($config.threads) -u $($config.bucket_count) -t $($t1) -2 $($t2) -d $($config.pool_plot_location) $($gFlag) -f $($config.farmer_key) -c $($config.contract_NFT)"
     $i = $i + 1
 }
