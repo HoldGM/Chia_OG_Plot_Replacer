@@ -44,17 +44,22 @@ git clone https://github.com/HoldGM/Chia_OG_Plot_Replacer.git
     --madmax_G_flag:
               Set to True/False to enable/disable use of plotter -G flag to rotate temp 1 & temp 2 drives. Set to false when not using a Temp 2 location or using RamDisk as Temp 2 location for plotting
 ```
-* Step-by-step bullets
+* Start Windows Powershel & navigate to location where Chia_OG_Plot_Replacer was cloned
 ```
-code blocks for commands
+> .\Pool_Plot_Replace.ps1
 ```
 
 ## Help
 
-Any advise for common problems or issues.
+If script fails to execute with:
 ```
-command to run if program contains helper info
+\Pool_Plot_Replace.ps1 cannot be loaded because running scripts is disabled on this system.
 ```
+Close Powershell and reopen as Administrator and run: 
+```
+> set-executionpolicy remotesigned
+```
+Close Administrator console, open new Powershell console and attempt to run script again
 
 ## Authors
 
