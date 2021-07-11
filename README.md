@@ -24,25 +24,29 @@ git clone https://github.com/HoldGM/Chia_OG_Plot_Replacer.git
 * Update config.json with paramters
 ```
     --old_plot_location:
-              File path to location of old plots to be replace 
+              File path to location of old plots to be replace.
     --pool_plot_location:
-              File path to location of new portable plot. It is recommended to create a new directory for new portable plots to be stored to avoid mixing with old plots
+              File path to location of new portable plot. It is recommended to create 
+              a new directory for new portable plots to be stored to avoid mixing with 
+              old plots.
     --madmax_exec:
-              File path to Madmax chia plotter executable
+              File path to Madmax chia plotter executable.
     --threads:
-              Number of threads to use running plotter
+              Number of threads to use running plotter.
     --bucket_count:
-              Number of buckets
+              Number of buckets.
     --temp1:
-              Temp 1 file path
+              Temp 1 file path.
     --temp2:
-              Temp 2 file path - Optional - Can be left empty when using only Temp 1 location
+              Temp 2 file path - Optional - Can be left empty when using only Temp 1 location.
     --contract_NFT:
-              NFT Contract address generated from Chia CLI or GUI
+              NFT Contract address generated from Chia CLI or GUI.
     --farmer_key:
-              Farmer public key
+              Farmer public key.
     --madmax_G_flag:
-              Set to True/False to enable/disable use of plotter -G flag to rotate temp 1 & temp 2 drives. Set to false when not using a Temp 2 location or using RamDisk as Temp 2 location for plotting
+              Set to True/False to enable/disable use of plotter -G flag to rotate 
+              temp 1 & temp 2 drives. Set to false when not using a Temp 2 location 
+              or using RamDisk as Temp 2 location for plotting.
 ```
 * Start Windows Powershel & navigate to location where Chia_OG_Plot_Replacer was cloned
 ```
@@ -51,7 +55,9 @@ git clone https://github.com/HoldGM/Chia_OG_Plot_Replacer.git
 
 ## Help
 
-If script fails to execute with:
+*JSON format requires '\' to be escaped, use '\\' for file path delimiters
+
+*If script fails to execute with:
 ```
 \Pool_Plot_Replace.ps1 cannot be loaded because running scripts is disabled on this system.
 ```
