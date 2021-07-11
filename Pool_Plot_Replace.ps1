@@ -54,7 +54,7 @@ if(!(Test-Path $config.pool_plot_location)){
 }
 
 #List of old plots to be replaced
-$oldPlotList = Get-ChildItem -Path "$($config.old_plot_location)*.plot" | Sort CreationTime | Select -First 1
+$oldPlotList = Get-ChildItem -Path "$($config.old_plot_location)*.plot" | Sort CreationTime
 
 # Start replacement of old plots
 $i = 1
