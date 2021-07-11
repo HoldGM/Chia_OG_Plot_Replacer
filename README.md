@@ -3,13 +3,13 @@ Powershell automation tool for replacing Solor Chia Plots with Portable Chia Plo
 
 ## Description
 
-In combination with madMAx43v3r Chia Plotter, this Windows Powershell Script will automatically remove exisitng Chia Plots and execute a the madMAx43v3r Chiaa Plotter to generate a replacement portable pool plot. 
+In combination with madMAx43v3r Chia Plotter, this Windows Powershell Script will automatically remove exisitng Chia Plots and execute the madMAx43v3r Chia Plotter to generate a replacement portable pool plot. 
 
 ## Getting Started
 
 ### Dependencies
 
-* Download Stotik's madMAx43v3r Chia Plotter build for windows
+* Download stotik's madMAx43v3r Chia Plotter build for windows
 *   https://github.com/stotiks/chia-plotter/releases
 
 ### Installing
