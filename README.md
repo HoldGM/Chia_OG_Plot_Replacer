@@ -61,7 +61,7 @@ git clone https://github.com/HoldGM/Chia_OG_Plot_Replacer.git
     ```
     \Pool_Plot_Replace.ps1 cannot be loaded because running scripts is disabled on this system.
     ```
-    Close Powershell and reopen as Administrator and run: 
+    Close Powershell, reopen as Administrator and run: 
     ```
     > set-executionpolicy remotesigned
     ```
