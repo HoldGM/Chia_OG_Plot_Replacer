@@ -1,12 +1,12 @@
 {
     "old_plot_location":  "N:\\",
     "pool_plot_location":  "N:\\pool_plots\\",
-    "madmax_exec":  "C:\\Users\\GameRoom\\Documents\\MadMax_Plotter\\chia_plot.exe",
+    "madmax_exec":  "C:\\Users\\User\\Documents\\MadMax_Plotter\\chia_plot.exe",
     "threads":  10,
     "bucket_count":  256,
     "temp1":  "X:\\",
     "temp2":  "Y:\\",
-    "contract_NFT":  "xch1dm458rjh4rx6q2dptyedxzey8w75x23z90l3smc4nhxeqf5nfmfs77vsp2",
-    "farmer_key":  "a386f14d6dd98fe428230d732629827315841fd2d2622ff63d211d3c0f99b6ced9058f38b90e906a051060f96705ba65",
+    "contract_NFT":  "",
+    "farmer_key":  "",
     "madmax_G_flag": true
 }
